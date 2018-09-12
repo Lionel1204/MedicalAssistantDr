@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        //mLogged = true;
+        mLogged = true;
         if (!mLogged) {
             Intent loginIntent = new Intent(MedConst.INTENT_ACTION_LOGIN);
             loginIntent.putExtra("key", "test");
