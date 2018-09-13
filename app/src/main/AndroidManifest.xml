@@ -30,6 +30,60 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.MessageActivity"
+            android:label="@string/message_title">
+            <intent-filter>
+                <action android:name="ACTION_MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DrManagementActivity"
+            android:label="@string/dr_mgmt_title">
+            <intent-filter>
+                <action android:name="ACTION_DR_MANAGEMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PtManagementActivity"
+            android:label="@string/pt_mgmt_title">
+            <intent-filter>
+                <action android:name="ACTION_PT_MANAGEMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PaymentManagementActivity"
+            android:label="@string/payment_mgmt_title">
+            <intent-filter>
+                <action android:name="ACTION_PAYMENT_MANAGEMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActManagementActivity"
+            android:label="@string/act_mgmt_title">
+            <intent-filter>
+                <action android:name="ACTION_ACTIVITY_MANAGEMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="@string/profile_title">
+            <intent-filter>
+                <action android:name="ACTION_PROFILE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

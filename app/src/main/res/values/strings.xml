@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">MedicalAssistantDr</string>
-    <string name="title_activity_login">Sign in</string>
+    <string name="app_name">心血管康复中心(医生版)</string>
+    <string name="title_activity_login">登录</string>
+    <string name="main_call_info">对话信息</string>
+    <string name="main_dr_management">医生管理</string>
+    <string name="main_pt_management">患者管理</string>
+    <string name="main_payment_management">套餐管理</string>
+    <string name="main_activity_management">活动管理</string>
+    <string name="main_profile">我的</string>
 
     <!-- Strings related to login -->
     <string name="prompt_id">医生编码</string>
@@ -14,4 +20,27 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <!-- Message activity -->
+    <string name="message_title">信息列表</string>
+
+    <!-- Doctor Management Activity -->
+    <string name="dr_mgmt_title">医生管理</string>
+
+
+    <!-- Patient Management Activity -->
+    <string name="pt_mgmt_title">患者管理</string>
+
+    <!-- Payment Management Activity -->
+    <string name="payment_mgmt_title">套餐管理</string>
+
+    <!-- Activity Management Activity -->
+    <string name="act_mgmt_title">活动管理</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_title">我的</string>
+
+    <!-- Menu -->
+    <string name="menu_add">添加</string>
+    <string name="menu_del">删除</string>
 </resources>

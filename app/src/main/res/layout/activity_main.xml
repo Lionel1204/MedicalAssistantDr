@@ -15,61 +15,75 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/btn_main_message"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
+                android:layout_margin="5px"
                 android:layout_weight="1"
                 android:background="@drawable/placeholder"
-                android:text="Button" />
+                android:onClick="onBtnClick"
+                android:text="@string/main_call_info" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/btn_main_dr_mgmt"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
+                android:layout_margin="5px"
                 android:layout_weight="1"
                 android:background="@drawable/placeholder"
-                android:text="Button" />
+                android:onClick="onBtnClick"
+                android:text="@string/main_dr_management" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/btn_main_pt_mgmt"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
+                android:layout_margin="5px"
                 android:layout_weight="1"
                 android:background="@drawable/placeholder"
-                android:text="Button" />
+                android:onClick="onBtnClick"
+                android:text="@string/main_pt_management" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/btn_main_payment_mgmt"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
+                android:layout_margin="5px"
                 android:layout_weight="1"
                 android:background="@drawable/placeholder"
-                android:text="Button" />
+                android:onClick="onBtnClick"
+                android:text="@string/main_payment_management" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/btn_main_activity_mgmt"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
+                android:layout_margin="5px"
                 android:layout_weight="1"
                 android:background="@drawable/placeholder"
-                android:text="Button" />
+                android:onClick="onBtnClick"
+                android:text="@string/main_activity_management" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btn_main_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
+                android:layout_margin="5px"
                 android:layout_weight="1"
                 android:background="@drawable/placeholder"
-                android:text="Button" />
+                android:onClick="onBtnClick"
+                android:text="@string/main_profile" />
         </LinearLayout>
     </LinearLayout>
 
