@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.gma.medicalassistantdr.R;
 import com.gma.medicalassistantdr.adapter.DrMgmtItemAdapter;
@@ -70,5 +71,9 @@ public class PtDetailsActivity extends AppCompatActivity implements
     @Override
     public void onPtDetailsActivityItemClick(View view, int position) {
 
+    }
+
+    void onBtnClick(View v){
+        Toast.makeText(this, R.string.main_demo_disable, Toast.LENGTH_SHORT).show();
     }
 }

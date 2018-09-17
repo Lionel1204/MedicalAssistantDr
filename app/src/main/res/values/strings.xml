@@ -64,6 +64,7 @@
     <string name="pt_details_activity">参加活动</string>
     <string name="pt_details_plan">心血管计划</string>
     <string name="pt_details_pt_name">患者姓名：</string>
+    <string name="pt_details_call">发起对话</string>
 
     <!-- Menu -->
     <string name="menu_add">添加</string>
