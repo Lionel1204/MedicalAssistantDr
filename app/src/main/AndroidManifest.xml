@@ -33,6 +33,10 @@
         <activity
             android:name=".activity.MessageActivity"
             android:label="@string/message_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+
             <intent-filter>
                 <action android:name="ACTION_MESSAGE" />
 
@@ -42,6 +46,10 @@
         <activity
             android:name=".activity.DrManagementActivity"
             android:label="@string/dr_mgmt_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+
             <intent-filter>
                 <action android:name="ACTION_DR_MANAGEMENT" />
 
@@ -51,6 +59,10 @@
         <activity
             android:name=".activity.PtManagementActivity"
             android:label="@string/pt_mgmt_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+
             <intent-filter>
                 <action android:name="ACTION_PT_MANAGEMENT" />
 
@@ -60,6 +72,10 @@
         <activity
             android:name=".activity.PaymentManagementActivity"
             android:label="@string/payment_mgmt_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+
             <intent-filter>
                 <action android:name="ACTION_PAYMENT_MANAGEMENT" />
 
@@ -69,6 +85,10 @@
         <activity
             android:name=".activity.ActManagementActivity"
             android:label="@string/act_mgmt_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+
             <intent-filter>
                 <action android:name="ACTION_ACTIVITY_MANAGEMENT" />
 
@@ -78,8 +98,51 @@
         <activity
             android:name=".activity.ProfileActivity"
             android:label="@string/profile_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+
             <intent-filter>
                 <action android:name="ACTION_PROFILE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddDrActivity"
+            android:label="@string/add_dr_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DrManagementActivity" />
+
+            <intent-filter>
+                <action android:name="ACTION_ADD_DR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddPtActivity"
+            android:label="@string/add_pt_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.PtManagementActivity" />
+
+            <intent-filter>
+                <action android:name="ACTION_ADD_PT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PtDetailsActivity"
+            android:label="@string/pt_details_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.PtManagementActivity" />
+
+            <intent-filter>
+                <action android:name="ACTION_PT_DETAILS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
