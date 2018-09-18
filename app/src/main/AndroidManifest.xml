@@ -147,6 +147,58 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.PayDetailsActivity"
+            android:label="@string/payment_details_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.PaymentManagementActivity" />
+
+            <intent-filter>
+                <action android:name="ACTION_PAYMENT_DETAILS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddPayActivity"
+            android:label="@string/add_payment_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.PaymentManagementActivity" />
+
+            <intent-filter>
+                <action android:name="ACTION_ADD_PAYMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActDetailsActivity"
+            android:label="@string/act_details_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ActManagementActivity" />
+
+            <intent-filter>
+                <action android:name="ACTION_ACTIVITY_DETAILS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddActActivity"
+            android:label="@string/add_act_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ActManagementActivity" />
+
+            <intent-filter>
+                <action android:name="ACTION_ADD_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -12,6 +12,10 @@ public class MedConst {
     public static final String INTENT_ACTION_ADD_DR = "ACTION_ADD_DR";
     public static final String INTENT_ACTION_ADD_PT = "ACTION_ADD_PT";
     public static final String INTENT_ACTION_PT_DETAILS = "ACTION_PT_DETAILS";
+    public static final String INTENT_ACTION_PAYMENT_DETAILS = "ACTION_PAYMENT_DETAILS";
+    public static final String INTENT_ACTION_ADD_PAYMENT = "ACTION_ADD_PAYMENT";
+    public static final String INTENT_ACTION_ACTIVITY_DETAILS = "ACTION_ACTIVITY_DETAILS";
+    public static final String INTENT_ACTION_ADD_ACTIVITY = "ACTION_ADD_ACTIVITY";
 
     // Request Code
     public static final int LOGIN_REQUEST_CODE = 10001;
@@ -24,5 +28,9 @@ public class MedConst {
     public static final int ADD_DR_REQUEST_CODE = 10071;
     public static final int ADD_PT_REQUEST_CODE = 10081;
     public static final int PT_DETAILS_REQUEST_CODE = 10091;
+    public static final int PAYMENT_DETAILS_REQUEST_CODE = 10101;
+    public static final int ADD_PAYMENT_REQUEST_CODE = 10111;
+    public static final int ACTIVITY_DETAILS_REQUEST_CODE = 10121;
+    public static final int ADD_ACTIVITY_REQUEST_CODE = 10131;
 
 }

@@ -28,25 +28,15 @@
     <!-- Doctor Management Activity -->
     <string name="dr_mgmt_title">医生管理</string>
 
-
-    <!-- Patient Management Activity -->
-    <string name="pt_mgmt_title">患者管理</string>
-
-    <!-- Payment Management Activity -->
-    <string name="payment_mgmt_title">套餐管理</string>
-
-    <!-- Activity Management Activity -->
-    <string name="act_mgmt_title">活动管理</string>
-
-    <!-- Profile Activity -->
-    <string name="profile_title">我的</string>
-
     <!-- Add Doctor Activity -->
     <string name="add_dr_title">添加医生</string>
     <string name="add_dr_add_id">输入医生编号</string>
     <string name="add_dr_init_password">添加初始密码</string>
     <string name="add_dr_ok">确定</string>
     <string name="add_dr_cancel">取消</string>
+
+    <!-- Patient Management Activity -->
+    <string name="pt_mgmt_title">患者管理</string>
 
     <!-- Add Patient Activity -->
     <string name="add_pt_title">添加患者</string>
@@ -65,6 +55,42 @@
     <string name="pt_details_plan">心血管计划</string>
     <string name="pt_details_pt_name">患者姓名：</string>
     <string name="pt_details_call">发起对话</string>
+
+    <!-- Payment Management Activity -->
+    <string name="payment_mgmt_title">套餐管理</string>
+    <string name="payment_mgmt_pay">套餐</string>
+
+    <!-- Payment details Activity -->
+    <string name="payment_details_title">套餐详情</string>
+    <string name="payment_details_edit">编辑</string>
+    <string name="payment_details_del">删除</string>
+
+    <!-- Add Payment Activity -->
+    <string name="add_payment_title">添加套餐</string>
+    <string name="add_payment_name">套餐名称</string>
+    <string name="add_payment_details">套餐说明</string>
+    <string name="add_payment_price">收费标准</string>
+    <string name="add_payment_ok">确定</string>
+    <string name="add_payment_cancel">取消</string>
+
+    <!-- Activity Management Activity -->
+    <string name="act_mgmt_title">活动管理</string>
+    <string name="act_mgmt_activity">活动</string>
+
+    <!-- Activity Details Activity -->
+    <string name="act_details_title">活动详情</string>
+    <string name="act_details_edit">编辑</string>
+    <string name="act_details_del">删除</string>
+
+    <!-- Add Activity Activity -->
+    <string name="add_act_title">添加活动</string>
+    <string name="add_act_name">活动名称</string>
+    <string name="add_act_details">活动说明</string>
+    <string name="add_act_ok">确定</string>
+    <string name="add_act_cancel">取消</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_title">我的</string>
 
     <!-- Menu -->
     <string name="menu_add">添加</string>

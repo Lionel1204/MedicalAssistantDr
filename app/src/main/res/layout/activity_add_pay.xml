@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddPayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20px"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_add_pay_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50px"
+            android:ems="10"
+            android:hint="@string/add_payment_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edt_add_pay_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50px"
+            android:ems="10"
+            android:hint="@string/add_payment_details"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edt_add_pay_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50px"
+            android:ems="10"
+            android:hint="@string/add_payment_price"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_add_pay_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10px"
+                android:layout_weight="1"
+                android:onClick="onBtnClick"
+                android:text="@string/add_payment_ok" />
+
+            <Button
+                android:id="@+id/btn_add_pay_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_weight="1"
+                android:onClick="onBtnClick"
+                android:text="@string/add_payment_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
