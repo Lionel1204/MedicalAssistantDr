@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@android:color/background_light"
             android:orientation="horizontal">
 
             <Button
@@ -24,7 +24,7 @@
                 android:layout_height="@dimen/activity_main_button_height"
                 android:layout_margin="5px"
                 android:layout_weight="1"
-                android:background="@drawable/placeholder"
+                android:drawableTop="@drawable/message"
                 android:onClick="onBtnClick"
                 android:text="@string/main_call_info" />
 
@@ -34,7 +34,7 @@
                 android:layout_height="@dimen/activity_main_button_height"
                 android:layout_margin="5px"
                 android:layout_weight="1"
-                android:background="@drawable/placeholder"
+                android:drawableTop="@drawable/dr_mgmt"
                 android:onClick="onBtnClick"
                 android:text="@string/main_dr_management" />
 
@@ -44,7 +44,7 @@
                 android:layout_height="@dimen/activity_main_button_height"
                 android:layout_margin="5px"
                 android:layout_weight="1"
-                android:background="@drawable/placeholder"
+                android:drawableTop="@drawable/pt_mgmt"
                 android:onClick="onBtnClick"
                 android:text="@string/main_pt_management" />
         </LinearLayout>
@@ -52,7 +52,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/design_default_color_primary"
+            android:background="@android:color/background_light"
             android:orientation="horizontal">
 
             <Button
@@ -61,7 +61,7 @@
                 android:layout_height="@dimen/activity_main_button_height"
                 android:layout_margin="5px"
                 android:layout_weight="1"
-                android:background="@drawable/placeholder"
+                android:drawableTop="@drawable/pay_mgmt"
                 android:onClick="onBtnClick"
                 android:text="@string/main_payment_management" />
 
@@ -71,7 +71,7 @@
                 android:layout_height="@dimen/activity_main_button_height"
                 android:layout_margin="5px"
                 android:layout_weight="1"
-                android:background="@drawable/placeholder"
+                android:drawableTop="@drawable/act_mgmt"
                 android:onClick="onBtnClick"
                 android:text="@string/main_activity_management" />
 
@@ -81,10 +81,11 @@
                 android:layout_height="@dimen/activity_main_button_height"
                 android:layout_margin="5px"
                 android:layout_weight="1"
-                android:background="@drawable/placeholder"
+                android:drawableTop="@drawable/profile"
                 android:onClick="onBtnClick"
                 android:text="@string/main_profile" />
         </LinearLayout>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

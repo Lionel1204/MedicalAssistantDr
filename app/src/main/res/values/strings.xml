@@ -91,6 +91,11 @@
 
     <!-- Profile Activity -->
     <string name="profile_title">我的</string>
+    <string name="profile_avatar">头像</string>
+    <string name="profile_dr_id">医生编码</string>
+    <string name="profile_email">邮箱</string>
+    <string name="profile_modify_password">更改密码</string>
+    <string name="profile_upgrade">版本更新</string>
 
     <!-- Menu -->
     <string name="menu_add">添加</string>
