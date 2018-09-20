@@ -15,15 +15,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
+            android:background="@android:color/darker_gray"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_main_message"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
-                android:layout_margin="5px"
+                android:layout_margin="1dp"
                 android:layout_weight="1"
+                android:background="@android:color/background_light"
                 android:drawableTop="@drawable/message"
                 android:onClick="onBtnClick"
                 android:text="@string/main_call_info" />
@@ -32,8 +33,9 @@
                 android:id="@+id/btn_main_dr_mgmt"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
-                android:layout_margin="5px"
+                android:layout_margin="1dp"
                 android:layout_weight="1"
+                android:background="@android:color/background_light"
                 android:drawableTop="@drawable/dr_mgmt"
                 android:onClick="onBtnClick"
                 android:text="@string/main_dr_management" />
@@ -42,8 +44,9 @@
                 android:id="@+id/btn_main_pt_mgmt"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
-                android:layout_margin="5px"
+                android:layout_margin="1dp"
                 android:layout_weight="1"
+                android:background="@android:color/background_light"
                 android:drawableTop="@drawable/pt_mgmt"
                 android:onClick="onBtnClick"
                 android:text="@string/main_pt_management" />
@@ -52,15 +55,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
+            android:background="@android:color/darker_gray"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_main_payment_mgmt"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
-                android:layout_margin="5px"
+                android:layout_margin="1dp"
                 android:layout_weight="1"
+                android:background="@android:color/background_light"
                 android:drawableTop="@drawable/pay_mgmt"
                 android:onClick="onBtnClick"
                 android:text="@string/main_payment_management" />
@@ -69,8 +73,9 @@
                 android:id="@+id/btn_main_activity_mgmt"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
-                android:layout_margin="5px"
+                android:layout_margin="1dp"
                 android:layout_weight="1"
+                android:background="@android:color/background_light"
                 android:drawableTop="@drawable/act_mgmt"
                 android:onClick="onBtnClick"
                 android:text="@string/main_activity_management" />
@@ -79,8 +84,9 @@
                 android:id="@+id/btn_main_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/activity_main_button_height"
-                android:layout_margin="5px"
+                android:layout_margin="1dp"
                 android:layout_weight="1"
+                android:background="@android:color/background_light"
                 android:drawableTop="@drawable/profile"
                 android:onClick="onBtnClick"
                 android:text="@string/main_profile" />
