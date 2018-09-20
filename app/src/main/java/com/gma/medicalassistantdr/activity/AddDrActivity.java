@@ -16,7 +16,7 @@ public class AddDrActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_dr);
     }
     
-    void onBtnClick(View v){
+    public void onBtnClick(View v){
         String msg = getResources().getString(R.string.main_demo_disable);
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         switch(v.getId()){

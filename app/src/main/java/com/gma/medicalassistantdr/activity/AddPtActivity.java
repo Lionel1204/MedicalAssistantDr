@@ -15,7 +15,7 @@ public class AddPtActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_pt);
     }
 
-    void onBtnClick(View v){
+    public void onBtnClick(View v){
         String msg = getResources().getString(R.string.main_demo_disable);
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         switch(v.getId()){

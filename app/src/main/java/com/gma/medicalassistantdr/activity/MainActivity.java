@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    void onBtnClick(View view) {
+    public void onBtnClick(View view) {
         String action = "";
         int requestCode = -1;
         switch (view.getId()) {

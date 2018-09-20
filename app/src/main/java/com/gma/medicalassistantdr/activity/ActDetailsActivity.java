@@ -27,7 +27,7 @@ public class ActDetailsActivity extends AppCompatActivity {
         detailsTextView.setText(details);
     }
 
-    void onBtnClick(View view) {
+    public void onBtnClick(View view) {
         switch (view.getId()) {
             case R.id.btn_act_details_edit:
                 Toast.makeText(this, R.string.main_demo_disable, Toast.LENGTH_SHORT).show();
