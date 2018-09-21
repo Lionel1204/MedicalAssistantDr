@@ -40,6 +40,7 @@ public class PtMgmtItemAdapter extends RecyclerView.Adapter<PtMgmtItemAdapter.Pt
         //设置textView显示内容为list里的对应项
         holder.tvName.setText(list.get(position).getName());
         holder.tvPhone.setText(list.get(position).getPhone());
+        holder.avatar.setImageBitmap(list.get(position).getAvatar());
 
         if (mItemClickListener != null) {
             holder.itemView.setTag(position);

@@ -15,21 +15,24 @@
         <TextView
             android:id="@+id/txtview_pt_details_listitem_product_name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:text="@string/pt_details_product1" />
+            android:text="@string/pt_details_product1"
+            android:textSize="20dip" />
 
         <TextView
             android:id="@+id/txtview_pt_details_listitem_progress"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="60%" />
+            android:layout_height="fill_parent"
+            android:text="60%"
+            android:textSize="18dip" />
 
         <ImageButton
             android:id="@+id/imgbtn_pt_details_listitem_purchase_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            app:srcCompat="@android:drawable/ic_media_play" />
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/item_tail" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

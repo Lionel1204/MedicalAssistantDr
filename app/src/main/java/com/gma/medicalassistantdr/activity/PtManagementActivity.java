@@ -1,9 +1,12 @@
 package com.gma.medicalassistantdr.activity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -32,18 +35,30 @@ public class PtManagementActivity extends AppCompatActivity implements PtMgmtIte
         recyclerView.setLayoutManager(new LinearLayoutManager(this));//设置布局管理器，这里选择用竖直的列表
         List<PtItem> list = new ArrayList<>();
 
-        PtItem di1 = new PtItem("张三", "P001", "13512341234", "D001", null);
+        BitmapDrawable dr1 = (BitmapDrawable) getDrawable(R.drawable.avatar4);
+        Bitmap bm1 = dr1.getBitmap();
+        PtItem di1 = new PtItem("张三", "P001", "13512341234", "D001", bm1);
         list.add(di1);
-        PtItem di2 = new PtItem("李四", "P002", "13623452345", "D001", null);
+
+        BitmapDrawable dr2 = (BitmapDrawable) getDrawable(R.drawable.avatar3);
+        Bitmap bm2 = dr2.getBitmap();
+        PtItem di2 = new PtItem("李四", "P002", "13623452345", "D001", bm2);
         list.add(di2);
-        PtItem di3 = new PtItem("王五", "P003", "13734563456", "D002", null);
+
+        BitmapDrawable dr3 = (BitmapDrawable) getDrawable(R.drawable.avatar2);
+        Bitmap bm3 = dr3.getBitmap();
+        PtItem di3 = new PtItem("王五", "P003", "13734563456", "D002", bm3);
         list.add(di3);
-        PtItem di4 = new PtItem("赵六", "P004", "13845674567", "D002", null);
+
+        BitmapDrawable dr4 = (BitmapDrawable) getDrawable(R.drawable.avatar1);
+        Bitmap bm4 = dr4.getBitmap();
+        PtItem di4 = new PtItem("赵六", "P004", "13845674567", "D002", bm4);
         list.add(di4);
 
         PtMgmtItemAdapter itemAdapter = new PtMgmtItemAdapter(list, this);//添加适配器，这里适配器刚刚装入了数据
         itemAdapter.setOnItemClickListener(this);
         recyclerView.setAdapter(itemAdapter);
+        recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
 
     }
 

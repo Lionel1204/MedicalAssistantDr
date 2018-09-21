@@ -1,9 +1,13 @@
 package com.gma.medicalassistantdr.activity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -38,19 +42,30 @@ public class DrManagementActivity extends AppCompatActivity implements DrMgmtIte
         recyclerView.setLayoutManager(new LinearLayoutManager(this));//设置布局管理器，这里选择用竖直的列表
         List<DrItem> list = new ArrayList<>();
 
-        DrItem di1 = new DrItem("张医生", null);
+        BitmapDrawable dr1 = (BitmapDrawable) getDrawable(R.drawable.avatar1);
+        Bitmap bm1 = dr1.getBitmap();
+        DrItem di1 = new DrItem("张医生", bm1);
         list.add(di1);
-        DrItem di2 = new DrItem("李主任", null);
+
+        BitmapDrawable dr2 = (BitmapDrawable) getDrawable(R.drawable.avatar2);
+        Bitmap bm2 = dr2.getBitmap();
+        DrItem di2 = new DrItem("李主任", bm2);
         list.add(di2);
-        DrItem di3 = new DrItem("王医生", null);
+
+        BitmapDrawable dr3 = (BitmapDrawable) getDrawable(R.drawable.avatar3);
+        Bitmap bm3 = dr3.getBitmap();
+        DrItem di3 = new DrItem("王医生", bm3);
         list.add(di3);
-        DrItem di4 = new DrItem("赵医生", null);
+
+        BitmapDrawable dr4 = (BitmapDrawable) getDrawable(R.drawable.avatar4);
+        Bitmap bm4 = dr4.getBitmap();
+        DrItem di4 = new DrItem("赵医生", bm4);
         list.add(di4);
 
         DrMgmtItemAdapter itemAdapter = new DrMgmtItemAdapter(list, this);//添加适配器，这里适配器刚刚装入了数据
         itemAdapter.setOnItemClickListener(this);
         recyclerView.setAdapter(itemAdapter);
-
+        recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
     }
 
     @Override

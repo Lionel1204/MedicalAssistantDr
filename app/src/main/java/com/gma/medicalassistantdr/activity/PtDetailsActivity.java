@@ -3,6 +3,7 @@ package com.gma.medicalassistantdr.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -38,6 +39,7 @@ public class PtDetailsActivity extends AppCompatActivity implements
         PtDetailsPurchaseAdapter purItemAdapter = new PtDetailsPurchaseAdapter(purList, this);//添加适配器，这里适配器刚刚装入了数据
         purItemAdapter.setOnPtDetailsPurchaseItemClickListener(this);
         purRecyclerView.setAdapter(purItemAdapter);
+        purRecyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
 
         RecyclerView actRecyclerView = findViewById(R.id.recyclerview_pt_details_activity);//获取对象
         actRecyclerView.setLayoutManager(new LinearLayoutManager(this));//设置布局管理器，这里选择用竖直的列表
@@ -49,6 +51,7 @@ public class PtDetailsActivity extends AppCompatActivity implements
         PtDetailsActivityAdapter actItemAdapter = new PtDetailsActivityAdapter(actList, this);//添加适配器，这里适配器刚刚装入了数据
         actItemAdapter.setOnPtDetailsActivityItemClickListener(this);
         actRecyclerView.setAdapter(actItemAdapter);
+        actRecyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
 
     }
 

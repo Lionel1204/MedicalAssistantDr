@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -44,6 +45,7 @@ public class ActManagementActivity extends AppCompatActivity implements ActMgmtI
         ActMgmtItemAdapter itemAdapter = new ActMgmtItemAdapter(list, this);//添加适配器，这里适配器刚刚装入了数据
         itemAdapter.setOnItemClickListener(this);
         recyclerView.setAdapter(itemAdapter);
+        recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
     }
 
     @Override

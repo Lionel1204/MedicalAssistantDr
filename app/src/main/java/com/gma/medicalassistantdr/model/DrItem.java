@@ -1,12 +1,12 @@
 package com.gma.medicalassistantdr.model;
 
-import android.media.Image;
+import android.graphics.Bitmap;
 
 public class DrItem {
     private String mName;
-    private Image mAvatar;
+    private Bitmap mAvatar;
 
-    public DrItem(String t, Image a) {
+    public DrItem(String t, Bitmap a) {
         this.mName = t;
         this.mAvatar = a;
     }
@@ -19,11 +19,11 @@ public class DrItem {
         this.mName = t;
     }
 
-    public Image getAvatar() {
+    public Bitmap getAvatar() {
         return this.mAvatar;
     }
 
-    public void setAvatar(Image a) {
+    public void setAvatar(Bitmap a) {
         this.mAvatar = a;
     }
 }

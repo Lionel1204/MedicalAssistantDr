@@ -15,12 +15,14 @@
             android:id="@+id/textview_pay_details_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10px"
-            android:background="@android:color/darker_gray"
-            android:text="TextView" />
+            android:layout_margin="5dp"
+            android:background="@color/bt_title_green"
+            android:textColor="@color/txt_white"
+            android:textSize="20dip" />
 
         <TextView
             android:id="@+id/textview_pay_details_details"
+            style="@style/ShowInfoStyle"
             android:layout_width="match_parent"
             android:layout_height="500px"
             android:layout_margin="30px"
@@ -36,6 +38,7 @@
 
             <Button
                 android:id="@+id/btn_pay_details_edit"
+                style="@style/AvailableBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10px"
@@ -45,6 +48,7 @@
 
             <Button
                 android:id="@+id/btn_pay_details_del"
+                style="@style/AvailableBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10px"

@@ -39,6 +39,7 @@ public class DrMgmtItemAdapter extends RecyclerView.Adapter<DrMgmtItemAdapter.Dr
     public void onBindViewHolder(DrMgmtItemViewHolder holder, final int position) {
         //设置textView显示内容为list里的对应项
         holder.textView.setText(list.get(position).getItemName());
+        holder.avatar.setImageBitmap(list.get(position).getAvatar());
 
         /*
         //子项的点击事件监听

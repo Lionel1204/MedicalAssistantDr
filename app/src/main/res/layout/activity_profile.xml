@@ -23,16 +23,17 @@
             <TextView
                 android:id="@+id/textview_profile_avatar"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:layout_weight="1"
-                android:text="@string/profile_avatar" />
+                android:text="@string/profile_avatar"
+                android:textSize="20dip" />
 
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/background_light"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/item_tail" />
         </LinearLayout>
 
         <LinearLayout
@@ -44,22 +45,24 @@
             <TextView
                 android:id="@+id/textview_profile_dr_id"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:layout_weight="1"
-                android:text="@string/profile_dr_id" />
+                android:text="@string/profile_dr_id"
+                android:textSize="20dip" />
 
             <TextView
                 android:id="@+id/textview_profile_dr_id_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="D0001" />
+                android:text="D0001"
+                android:textSize="18dip" />
 
             <ImageButton
                 android:id="@+id/imageButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/background_light"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/item_tail" />
         </LinearLayout>
 
         <LinearLayout
@@ -71,22 +74,24 @@
             <TextView
                 android:id="@+id/textview_profile_email"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:layout_weight="1"
-                android:text="@string/profile_email" />
+                android:text="@string/profile_email"
+                android:textSize="20dip" />
 
             <TextView
                 android:id="@+id/textview_profile_email_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="zhongyidaxue@163.com" />
+                android:layout_height="fill_parent"
+                android:text="zhongyidaxue@163.com"
+                android:textSize="18dip" />
 
             <ImageButton
                 android:id="@+id/imageButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/background_light"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/item_tail" />
         </LinearLayout>
 
         <LinearLayout
@@ -100,14 +105,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/profile_modify_password" />
+                android:text="@string/profile_modify_password"
+                android:textSize="20dip" />
 
             <ImageButton
                 android:id="@+id/imageButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/background_light"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/item_tail" />
         </LinearLayout>
 
         <LinearLayout
@@ -119,22 +125,24 @@
             <TextView
                 android:id="@+id/textview_profile_upgrade"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:layout_weight="1"
-                android:text="@string/profile_upgrade" />
+                android:text="@string/profile_upgrade"
+                android:textSize="20dip" />
 
             <TextView
                 android:id="@+id/textview_profile_upgrade_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="v0.1.0" />
+                android:layout_height="fill_parent"
+                android:text="v0.1.0"
+                android:textSize="18dip" />
 
             <ImageButton
                 android:id="@+id/imageButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/background_light"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/item_tail" />
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

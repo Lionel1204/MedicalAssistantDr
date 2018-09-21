@@ -1,16 +1,16 @@
 package com.gma.medicalassistantdr.model;
 
-import android.media.Image;
+import android.graphics.Bitmap;
 
 public class PtItem {
     private String mName;
     private String mPtId;
     private String mPhone;
     private String mDrId;
-    private Image mAvatar;
+    private Bitmap mAvatar;
 
 
-    public PtItem(String name, String ptId, String phone, String drId, Image avatar) {
+    public PtItem(String name, String ptId, String phone, String drId, Bitmap avatar) {
         this.mName = name;
         this.mPtId = ptId;
         this.mPhone = phone;
@@ -38,7 +38,7 @@ public class PtItem {
 
     public void setDrId(String id) { this.mDrId = id; }
 
-    public Image getAvatar() { return this.mAvatar; }
+    public Bitmap getAvatar() { return this.mAvatar; }
 
-    public void setAvatar(Image avatar) { this.mAvatar = avatar; }
+    public void setAvatar(Bitmap avatar) { this.mAvatar = avatar; }
 }

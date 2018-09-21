@@ -23,7 +23,7 @@ public class ActDetailsActivity extends AppCompatActivity {
         titleTextView.setText(payName);
 
         TextView detailsTextView = findViewById(R.id.textview_act_details_details);
-        String details = "时间：2018年10月21日 - 10月23日 15:30-17:30\r\n\r\n 地址：中心会议室\r\n\r\n 内容：中医心血管讲座以及康复锻炼的讲解\r\n\r\n 主讲：广州中医药大学";
+        String details = " 时间：2018年10月21日 - 10月23日 15:30-17:30\r\n\r\n 地址：中心会议室\r\n\r\n 内容：中医心血管讲座以及康复锻炼的讲解\r\n\r\n 主讲：广州中医药大学";
         detailsTextView.setText(details);
     }
 

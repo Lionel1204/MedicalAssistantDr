@@ -23,7 +23,7 @@ public class PayDetailsActivity extends AppCompatActivity {
         titleTextView.setText(payName);
 
         TextView detailsTextView = findViewById(R.id.textview_pay_details_details);
-        String details = String.format("心脏养护关爱%s\r\n\r\n 套餐介绍：时刻关爱您的心脏健康，祝您早日康复，套餐为期120天\r\n\r\n 价格：128元", payName);
+        String details = String.format(" 心脏养护关爱%s\r\n\r\n 套餐介绍：时刻关爱您的心脏健康，祝您早日康复，套餐为期120天\r\n\r\n 价格：128元", payName);
         detailsTextView.setText(details);
     }
 

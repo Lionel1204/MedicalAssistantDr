@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AvailableBtn">
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:textColor">@color/txt_white</item>
+    </style>
+
+    <style name="ShowInfoStyle">
+        <item name="android:textSize">18dip</item>
+        <item name="android:textColor">@color/txt_gray</item>
+    </style>
 </resources>

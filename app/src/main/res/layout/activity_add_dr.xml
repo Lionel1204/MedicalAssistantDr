@@ -15,8 +15,7 @@
             android:id="@+id/edt_add_dr_add_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10px"
-            android:layout_marginRight="10px"
+            android:layout_margin="10dp"
             android:ems="10"
             android:hint="@string/add_dr_add_id"
             android:inputType="textPersonName" />
@@ -25,8 +24,7 @@
             android:id="@+id/edt_add_dr_add_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10px"
-            android:layout_marginRight="10px"
+            android:layout_margin="10dp"
             android:ems="10"
             android:hint="@string/add_dr_init_password"
             android:inputType="textPassword" />
@@ -34,12 +32,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20px"
-            android:layout_marginRight="20px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_add_dr_ok"
+                style="@style/AvailableBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10px"
@@ -49,6 +49,7 @@
 
             <Button
                 android:id="@+id/btn_add_dr_cancel"
+                style="@style/AvailableBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10px"

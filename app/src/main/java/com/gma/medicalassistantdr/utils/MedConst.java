@@ -2,7 +2,7 @@ package com.gma.medicalassistantdr.utils;
 
 public class MedConst {
     // Intent
-    public static final String INTENT_ACTION_LOGIN = "ACTION_LOGIN";
+    public static final String INTENT_ACTION_LOGIN = "ACTION_DR_LOGIN";
     public static final String INTENT_ACTION_MESSAGE = "ACTION_MESSAGE";
     public static final String INTENT_ACTION_DR_MANAGEMENT = "ACTION_DR_MANAGEMENT";
     public static final String INTENT_ACTION_PT_MANAGEMENT = "ACTION_PT_MANAGEMENT";

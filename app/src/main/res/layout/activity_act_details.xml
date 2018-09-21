@@ -6,53 +6,60 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".activity.ActDetailsActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/textview_act_details_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10px"
-        android:background="@android:color/darker_gray"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textview_act_details_details"
-        android:layout_width="match_parent"
-        android:layout_height="500px"
-        android:layout_margin="30px"
-        android:background="@drawable/textview_border"
-        android:singleLine="false" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:orientation="horizontal">
+        android:layout_height="510dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        <Button
-            android:id="@+id/btn_act_details_edit"
+        <TextView
+            android:id="@+id/textview_act_details_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10px"
-            android:layout_weight="1"
-            android:onClick="onBtnClick"
-            android:text="@string/payment_details_edit" />
+            android:layout_margin="5dp"
+            android:background="@color/bt_title_green"
+            android:text="TextView"
+            android:textColor="@color/txt_white"
+            android:textSize="20dip" />
 
-        <Button
-            android:id="@+id/btn_act_details_del"
+        <TextView
+            android:id="@+id/textview_act_details_details"
+            style="@style/ShowInfoStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10px"
-            android:layout_weight="1"
-            android:onClick="onBtnClick"
-            android:text="@string/payment_details_del" />
+            android:layout_height="500px"
+            android:layout_margin="15dp"
+            android:background="@drawable/textview_border"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_act_details_edit"
+                style="@style/AvailableBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10px"
+                android:layout_weight="1"
+                android:onClick="onBtnClick"
+                android:text="@string/payment_details_edit" />
+
+            <Button
+                android:id="@+id/btn_act_details_del"
+                style="@style/AvailableBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_weight="1"
+                android:onClick="onBtnClick"
+                android:text="@string/payment_details_del" />
+        </LinearLayout>
+
     </LinearLayout>
-
-</LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

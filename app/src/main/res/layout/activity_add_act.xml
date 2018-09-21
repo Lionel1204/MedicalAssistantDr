@@ -38,6 +38,7 @@ tools:context=".activity.AddActActivity">
 
         <Button
             android:id="@+id/btn_add_act_ok"
+            style="@style/AvailableBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="10px"
@@ -47,6 +48,7 @@ tools:context=".activity.AddActActivity">
 
         <Button
             android:id="@+id/btn_add_act_cancel"
+            style="@style/AvailableBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10px"
