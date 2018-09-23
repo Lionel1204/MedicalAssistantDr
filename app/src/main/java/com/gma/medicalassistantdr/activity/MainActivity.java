@@ -17,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if(null != savedInstanceState){
+            Log.i(TAG, "Get logged flag " + mLogged + " from savedInstanceState");
+            mLogged = savedInstanceState.getBoolean(MedConst.IS_LOGGED_KEY, false);
+        }
+
         setContentView(R.layout.activity_main);
     }
 
@@ -33,6 +39,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        if (null != outState) {
+            outState.putBoolean(MedConst.IS_LOGGED_KEY, mLogged);
+            Log.i(TAG, "Set logged flag " + mLogged + " from savedInstanceState");
+        }
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        if (null != savedInstanceState) {
+            mLogged = savedInstanceState.getBoolean(MedConst.IS_LOGGED_KEY);
+            Log.i(TAG, "restore logged flag " + mLogged + " from savedInstanceState");
+        }
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
@@ -41,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
                     String result = data.getExtras().getString("result");
                     mLogged = result.equals("OK");
                     Log.i(TAG, result);
+                } else if (resultCode == RESULT_CANCELED) {
+                    finish();
                 }
                 break;
             default:

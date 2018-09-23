@@ -76,7 +76,7 @@ public class PtDetailsActivity extends AppCompatActivity implements
 
     }
 
-    void onBtnClick(View v){
+    public void onBtnClick(View v){
         Toast.makeText(this, R.string.main_demo_disable, Toast.LENGTH_SHORT).show();
     }
 }

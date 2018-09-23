@@ -88,6 +88,7 @@ public class PaymentManagementActivity extends AppCompatActivity implements PayM
         Log.i(TAG, "Item Id: " + payName + " position: " + position);
         Intent detailsIntent = new Intent(MedConst.INTENT_ACTION_PAYMENT_DETAILS);
         detailsIntent.putExtra("PAY_NAME", payName);
+        detailsIntent.putExtra("PAY_POSITION", position);
         startActivityForResult(detailsIntent, MedConst.PAYMENT_DETAILS_REQUEST_CODE);
     }
 

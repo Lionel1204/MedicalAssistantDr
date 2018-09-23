@@ -33,4 +33,7 @@ public class MedConst {
     public static final int ACTIVITY_DETAILS_REQUEST_CODE = 10121;
     public static final int ADD_ACTIVITY_REQUEST_CODE = 10131;
 
+    //Keys
+    public static final String IS_LOGGED_KEY = "IS_LOGGED";
+
 }
